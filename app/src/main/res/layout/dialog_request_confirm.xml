@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/space_16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/confirm"
+        android:textColor="?android:attr/textColorPrimary"
+        android:textSize="@dimen/text_20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/space_24dp"
+        android:gravity="center_horizontal"
+        android:text="@string/request_warning"
+        android:textColor="?android:attr/textColorSecondary"
+        android:textSize="@dimen/text_16sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/space_24dp"
+        android:text="@string/specified_commercial_transactions_law"
+        android:textColor="?attr/colorAccent"
+        android:textSize="@dimen/text_16sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/space_8dp"
+        android:text="@string/request_agree"
+        android:textColor="?android:attr/textColorSecondary"
+        android:textSize="@dimen/text_16sp" />
+
+    <Button
+        android:id="@+id/send_request"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/space_24dp"
+        android:background="@drawable/active_btn_bg"
+        android:foreground="?attr/selectableItemBackground"
+        android:padding="@dimen/space_16dp"
+        android:text="@string/send_request"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_16sp" />
+
+    <Button
+        android:id="@+id/cancel_request"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/space_16dp"
+        android:background="@null"
+        android:foreground="?attr/selectableItemBackground"
+        android:padding="@dimen/space_16dp"
+        android:text="@string/cancel"
+        android:textColor="?attr/colorAccent"
+        android:textSize="@dimen/text_16sp" />
+
+</LinearLayout>

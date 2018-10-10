@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorPrimary"
+    android:paddingBottom="@dimen/space_16dp"
+    android:paddingLeft="@dimen/space_16dp"
+    android:paddingRight="@dimen/space_16dp"
+    android:paddingTop="@dimen/space_16dp">
+
+    <EditText
+        android:id="@+id/zip_code"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_button"
+        android:background="@drawable/edit_text_background"
+        android:hint="@string/search_sitter_hint"
+        android:inputType="number"
+        android:paddingLeft="@dimen/space_16dp"
+        android:paddingRight="@dimen/space_16dp"
+        android:textSize="@dimen/text_16sp" />
+
+    <com.wanpaku.pochi.infra.ui.widget.TwoStateButton
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_button"
+        android:layout_below="@+id/zip_code"
+        android:layout_marginTop="@dimen/space_16dp"
+        android:gravity="center"
+        android:text="@string/search_sitter"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_16sp"
+        app:activeBackground="@drawable/active_btn_bg"
+        app:inactiveBackground="@drawable/inactive_btn_bg"
+        app:isActive="false" />
+
+</RelativeLayout>

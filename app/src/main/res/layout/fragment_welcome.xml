@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/top_image"
+        android:layout_width="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/welcome_top"
+        app:layout_heightPercent="50%" />
+
+    <TextView
+        android:id="@+id/skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/space_16dp"
+        android:layout_marginTop="@dimen/space_32dp"
+        android:background="?attr/selectableItemBackground"
+        android:text="@string/skip"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_16sp" />
+
+    <com.facebook.login.widget.LoginButton
+        style="@style/FacebookLoginButton"
+        android:layout_below="@id/top_image"
+        android:layout_marginLeft="@dimen/space_16dp"
+        android:layout_marginRight="@dimen/space_16dp"
+        android:layout_marginTop="@dimen/space_16dp"
+        android:paddingBottom="@dimen/space_16dp"
+        android:paddingTop="@dimen/space_16dp"
+        app:com_facebook_login_text="@string/register_with_facebook"
+        app:com_facebook_logout_text="@string/register_with_facebook" />
+
+    <Button
+        android:id="@+id/sign_up"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_button"
+        android:layout_below="@+id/facebook_login"
+        android:layout_marginLeft="@dimen/space_16dp"
+        android:layout_marginRight="@dimen/space_16dp"
+        android:layout_marginTop="@dimen/space_16dp"
+        android:background="@drawable/active_btn_bg"
+        android:foreground="?attr/selectableItemBackground"
+        android:text="@string/signup_label"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/attention"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sign_up"
+        android:layout_marginLeft="@dimen/space_16dp"
+        android:layout_marginRight="@dimen/space_16dp"
+        android:layout_marginTop="@dimen/space_24dp"
+        android:textColor="?android:attr/textColorSecondary"
+        android:textSize="@dimen/text_16sp"
+        tools:text="登録することによって、利用規約、プライバシーポリシーに同意します。" />
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/space_16dp"
+        android:background="?attr/selectableItemBackground"
+        android:text="@string/login_text"
+        android:textColor="?attr/colorAccent"
+        android:textSize="@dimen/text_16sp" />
+
+</android.support.percent.PercentRelativeLayout>

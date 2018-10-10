@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "888546344001",
+    "firebase_url": "https://pochi-dev-01.firebaseio.com",
+    "project_id": "pochi-dev-01",
+    "storage_bucket": "pochi-dev-01.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:888546344001:android:65fc0245bf4d0a62",
+        "android_client_info": {
+          "package_name": "com.wanpaku.pochi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "888546344001-7pomskuevs3o4clhiirlaa0h94t6v5lq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD85lOyL-oDZ6h8tyJ5Mt_soxTa0weYRtY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

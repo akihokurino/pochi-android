@@ -1,0 +1,153 @@
+<resources>
+    <string name="app_name">pochi-android</string>
+    <string name="activity_sign_in_title">ログイン</string>
+    <string name="activity_sign_up_human_title">登録</string>
+    <string name="activity_sign_up_pet_title">愛犬の情報を登録</string>
+    <string name="login_label">ログイン</string>
+    <string name="signup_label">メールアドレスで登録</string>
+    <string name="skip">スキップ</string>
+    <string name="input_email_label">メールアドレス</string>
+    <string name="input_password_label">パスワード</string>
+    <string name="forget_password_label">パスワードを忘れた場合はこちら</string>
+    <string name="input_last_name_label">姓</string>
+    <string name="input_first_name_label">名</string>
+    <string name="input_nick_name_label">ニックネーム</string>
+    <string name="input_birthday_label">生年月日</string>
+    <string name="next_btn_label">次へ</string>
+    <string name="input_birthday_placeholder">年/月/日</string>
+    <string name="input_name_label">名前</string>
+    <string name="input_dog_type_label">犬種</string>
+    <string name="input_gender_label">性別</string>
+    <string name="input_age_label">年齢</string>
+    <string name="input_castration_label">去勢</string>
+    <string name="select_placeholder">選択してください</string>
+    <string name="register_btn_label">登録する</string>
+    <string name="other_first_section_item1">プロフィール</string>
+    <string name="other_first_section_item2">ホストプロフィール</string>
+    <string name="other_first_section_item3">預かり可能日の変更</string>
+    <string name="other_first_section_item4">ポイント払い戻し</string>
+    <string name="other_second_section_item1">設定</string>
+    <string name="other_second_section_item2">ヘルプ・サポート</string>
+    <string name="other_second_section_item3">不具合報告はこちら</string>
+    <string name="other_second_section_title">設定・ヘルプ</string>
+    <string name="setting_first_section_title">アカウント情報</string>
+    <string name="setting_second_section_title">その他</string>
+    <string name="setting_activity_title">設定</string>
+    <string name="setting_first_section_item1">メールアドレスの変更</string>
+    <string name="setting_first_section_item2">パスワードの変更</string>
+    <string name="setting_first_section_item3">通知設定</string>
+    <string name="setting_second_section_item1">利用規約</string>
+    <string name="setting_second_section_item2">プライバシーポリシー</string>
+    <string name="setting_second_section_item3">ソフトウェアライセンス</string>
+    <string name="setting_second_section_item4">アプリのバージョン</string>
+    <string name="setting_third_section_item1">ログアウト</string>
+
+    <string name="size_type">大きさ</string>
+
+    <string name="email_validation_error_message">メールアドレスを入力してください</string>
+    <string name="password_validation_error_message">パスワードは6文字以上必要です</string>
+
+    <string name="password_is_not_strong_enough">パスワードの強度が十分ではありません</string>
+    <string name="email_address_is_malformed_message">メールアドレスが適切な形式ではありません</string>
+    <string name="already_exists_an_account_with_the_given_email_address">既にユーザーが存在します</string>
+    <string name="failed_to_sign_up_try_again">ユーザーの作成に失敗しました。時間をおいて再度お試しください。</string>
+    <string name="failed_to_sign_in_try_again">サインインに失敗しました。時間をおいて再度お試しください。</string>
+    <string name="email_does_not_exist">メールアドレスが存在しません。</string>
+
+    <string name="search">探す</string>
+    <string name="user_booking">預ける</string>
+    <string name="sitter_booking">預かる</string>
+    <string name="task">タスク</string>
+    <string name="others">その他</string>
+
+    <string name="acceptable_dog_size_label">預かり可能な犬のサイズ</string>
+
+    <!-- welcome -->
+    <string name="login_text">既にアカウントをお持ちの方：ログイン</string>
+    <string name="attention_message">登録することによって、利用規約、プライバシーポリシーに同意します。</string>
+    <string name="register_with_facebook">Facebookで登録</string>
+
+    <!-- sign in -->
+    <string name="login_with_facebook">Facebookでログイン</string>
+
+    <!-- search tab -->
+    <string name="all_sitter">すべてのシッター</string>
+    <string name="search_sitter_hint">郵便番号を入力(例:1500032)</string>
+    <string name="search_sitter">検索する</string>
+    <string name="acceptable_dog_size_message">小型犬: %1$s/ 中型犬: %2$s/ 大型犬: %3$s</string>
+    <string name="ok">OK</string>
+    <string name="ng">NG</string>
+
+    <!-- search result -->
+    <string name="zip_code">郵便番号</string>
+    <string name="change">変更</string>
+
+    <!-- sitter detail -->
+    <string name="small_dog_ok">小型犬：OK</string>
+    <string name="small_dog_ng">小型犬：NG</string>
+    <string name="medium_dog_ok">中型犬：OK</string>
+    <string name="medium_dog_ng">中型犬：NG</string>
+    <string name="large_dog_ok">大型犬：OK</string>
+    <string name="large_dog_ng">大型犬：NG</string>
+    <string name="isolated">一軒家</string>
+    <string name="apartment">マンション</string>
+    <string name="smoking_house">喫煙の家</string>
+    <string name="non_smoking_house">禁煙の家</string>
+    <string name="infant_exist">小学生がいます</string>
+    <string name="schoolchild_exist">小学生がいます</string>
+    <string name="adult_exist">大人がいます</string>
+    <string name="early_morning">朝早く対応可能</string>
+    <string name="late_night">夜遅く対応可能</string>
+
+    <string name="about_sitter_house">家について</string>
+    <string name="images_of_sitter">ホストの家の写真</string>
+    <string name="pet_dog_label">%sさんの愛犬</string>
+    <string name="about_pet_dog">愛犬について</string>
+    <string name="sitter_profile_and_message">ホストプロフィール&amp;メッセージ</string>
+    <string name="send_message">メッセージを送る</string>
+    <string name="sitter_house_address">ホストの家の位置情報</string>
+    <string name="review_count">レビュー（%d）</string>
+    <string name="read_more">もっと読む</string>
+    <string name="pet_dog_is_not_exists">愛犬の登録がありません</string>
+
+    <!-- change zip code -->
+    <string name="input_zip_code">郵便番号を入力</string>
+    <string name="save">保存</string>
+
+    <!-- booking -->
+    <string name="request">リクエスト</string>
+    <string name="fixed_request">確定済み</string>
+    <string name="stay_now">預け中</string>
+    <string name="stayed_now">預かり中</string>
+    <string name="period_undecided">日程：未定</string>
+    <string name="period">日程：%1$s-%2$s</string>
+    <string name="empty_message">メッセージはありません</string>
+
+    <!-- message -->
+    <string name="about_stay_dog">預ける犬について</string>
+    <string name="date">日程</string>
+    <string name="price">金額</string>
+    <string name="request_content">リクエスト内容</string>
+    <string name="request_detail">リクエスト詳細</string>
+    <string name="select_dog">預ける犬を選択</string>
+    <string name="send_request">リクエストを送信</string>
+    <string name="cancel">キャンセル</string>
+    <string name="confirm">確認</string>
+    <string name="request_warning">リクエスト後の内容の変更は原則できません。
+変更したい場合、お手数ですが再度メッセージを作る必要があります。</string>
+    <string name="specified_commercial_transactions_law">特定商取引法に基づく表記に関する</string>
+    <string name="request_agree">に同意します。</string>
+    <string name="price_text">%1$d匹×%2$d泊（%3$d円/泊）= %4$d円</string>
+    <string name="price_text_tax_excluded">%1$d匹×%2$d泊（%3$d円/泊）= %4$d円（税抜き）</string>
+    <string name="unset">未設定</string>
+    <string name="address">住所</string>
+    <string name="look_sitter_profile">シッターのプロフィールを見る</string>
+    <string name="look_user_profile">ユーザーのプロフィールを見る</string>
+    <string name="how_to_cancel">キャンセルは右上のメニューから可能です。</string>
+    <string name="address_is_not_registered">住所が登録されていません</string>
+    <string name="request_is_not_send">まだリクエストの詳細はありません。</string>
+    <string name="accept_request">リクエストを承認する</string>
+    <string name="max_reward_point">最大獲得可能なポイント</string>
+    <string name="point">%dポイント</string>
+
+</resources>

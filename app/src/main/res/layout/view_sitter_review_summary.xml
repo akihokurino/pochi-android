@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/space_16dp"
+        android:textColor="?android:attr/textColorSecondary"
+        android:textSize="@dimen/text_16sp"
+        tools:text="レビュー（212）" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:background="@drawable/with_frame_background"
+        android:padding="@dimen/space_16dp">
+
+        <ImageView
+            android:id="@+id/thumbnail"
+            android:layout_width="@dimen/thumbnail_size_36dp"
+            android:layout_height="@dimen/thumbnail_size_36dp"
+            tools:src="@drawable/ic_medium_dog_ng" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/thumbnail"
+            android:layout_alignTop="@+id/thumbnail"
+            android:layout_marginLeft="@dimen/space_8dp"
+            android:layout_toRightOf="@+id/thumbnail"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/full_name"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textSize="@dimen/text_16sp"
+                tools:text="Akagawa Saki" />
+
+            <TextView
+                android:id="@+id/nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textColor="?android:attr/textColorSecondary"
+                android:textSize="@dimen/text_14sp"
+                tools:text="さきちょん" />
+
+        </LinearLayout>
+
+        <RatingBar
+            android:id="@+id/rating_bar"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/thumbnail"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/space_8dp"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:rating="3.5"
+            android:stepSize="1.0" />
+
+        <TextView
+            android:id="@+id/comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/thumbnail"
+            android:layout_marginTop="@dimen/space_16dp"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textSize="@dimen/text_16sp"
+            tools:text="とても親切なホストでした！また機会があると思うので、その時はまたお願いすると思います！
+ありがとうございました！" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/comment"
+            android:layout_marginTop="@dimen/text_16sp"
+            android:textColor="?android:attr/textColorSecondary"
+            android:textSize="@dimen/text_16sp"
+            tools:text="2017年10月22日" />
+
+        <include
+            android:id="@+id/divider"
+            layout="@layout/view_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/date"
+            android:layout_marginTop="@dimen/space_16dp" />
+
+        <TextView
+            android:id="@+id/read_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/divider"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/space_8dp"
+            android:background="?attr/selectableItemBackground"
+            android:paddingBottom="@dimen/space_8dp"
+            android:paddingLeft="@dimen/space_16dp"
+            android:paddingRight="@dimen/space_16dp"
+            android:paddingTop="@dimen/space_8dp"
+            android:text="@string/read_more"
+            android:textColor="?attr/colorAccent" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

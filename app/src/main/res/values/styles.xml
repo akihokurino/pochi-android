@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Toolbar" parent="Widget.AppCompat.Toolbar">
+        <item name="android:id">@+id/toolbar</item>
+        <item name="android:background">?attr/colorPrimary</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="android:theme">@style/ToolbarTheme</item>
+        <item name="android:elevation">@dimen/elevation_appbar</item>
+        <item name="popupTheme">@style/Theme.AppCompat.Light</item>
+    </style>
+
+    <style name="Toolbar.Transparent">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="FacebookLoginButton">
+        <item name="android:id">@+id/facebook_login</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/height_button</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+        <item name="com_facebook_confirm_logout">false</item>
+    </style>
+
+    <style name="Divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/grey300</item>
+    </style>
+
+    <style name="RequestButton" parent="Widget.AppCompat.Button">
+        <item name="android:textColor">@color/white</item>
+        <item name="activeBackground">@drawable/request_button_background</item>
+        <item name="inactiveBackground">@drawable/inactive_btn_bg</item>
+    </style>
+
+    <style name="RequestButtonWithFrame" parent="Widget.AppCompat.Button">
+        <item name="android:textColor">?attr/colorPrimary</item>
+        <item name="android:background">@drawable/request_button_background_with_frame</item>
+    </style>
+
+</resources>

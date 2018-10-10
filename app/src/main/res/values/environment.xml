@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="production_server_url">https://pochi-dev-01.appspot.com</string>
+</resources>

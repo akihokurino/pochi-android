@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF797A</color>
+    <color name="colorPrimaryDark">#FF797A</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- white -->
+    <color name="white">#FFFFFF</color>
+    <color name="white_alpha_70">#B2FFFFFF</color>
+
+    <!-- black -->
+    <color name="black_alpha87">#DE000000</color>
+    <color name="black_alpha54">#8A000000</color>
+    <color name="black_alpha38">#61000000</color>
+
+    <!-- grey -->
+    <color name="grey300">#E0E0E0</color>
+
+    <!-- others -->
+    <color name="facebook">#4a69bf</color>
+
+</resources>

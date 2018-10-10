@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:elevation="@dimen/elevation_card"
+    android:foreground="?attr/selectableItemBackground"
+    android:padding="@dimen/space_16dp">
+
+    <ImageView
+        android:id="@+id/thumbnail"
+        android:layout_width="@dimen/thumbnail_size_36dp"
+        android:layout_height="@dimen/thumbnail_size_36dp"
+        tools:src="@drawable/ic_adult" />
+
+    <TextView
+        android:id="@+id/full_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/thumbnail"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_marginLeft="@dimen/space_8dp"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:gravity="center_vertical"
+        android:textColor="?android:attr/textColorPrimary"
+        android:textSize="@dimen/text_16sp"
+        android:textStyle="bold"
+        tools:text="Nakagawa Takashi" />
+
+    <TextView
+        android:id="@+id/elapsed_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:textColor="?android:attr/textColorSecondary"
+        android:textSize="@dimen/text_12sp"
+        tools:text="24時間前" />
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/full_name"
+        android:layout_below="@+id/thumbnail"
+        android:textColor="?android:attr/textColorPrimary"
+        android:textSize="@dimen/text_14sp"
+        tools:text="はじめまして、田中ともうします。今回まだ日程を決め兼ねているのですが、12/1にお願いす…" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/message"
+        android:layout_below="@+id/message"
+        android:layout_marginTop="@dimen/space_8dp"
+        android:textColor="?android:attr/textColorSecondary"
+        tools:text="日程：未定" />
+
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<resources>
+    <!-- space -->
+    <dimen name="space_4dp">4dp</dimen>
+    <dimen name="space_8dp">8dp</dimen>
+    <dimen name="space_12dp">12dp</dimen>
+    <dimen name="space_16dp">16dp</dimen>
+    <dimen name="space_24dp">24dp</dimen>
+    <dimen name="space_32dp">32dp</dimen>
+    <dimen name="space_minus_4dp">-4dp</dimen>
+
+    <!-- text -->
+    <dimen name="text_12sp">12sp</dimen>
+    <dimen name="text_14sp">14sp</dimen>
+    <dimen name="text_16sp">16sp</dimen>
+    <dimen name="text_20sp">20sp</dimen>
+    <dimen name="text_24sp">24sp</dimen>
+
+    <!-- elevation -->
+    <dimen name="elevation_card">2dp</dimen>
+    <dimen name="elevation_appbar">4dp</dimen>
+
+    <!-- radius -->
+    <dimen name="radius_4dp">4dp</dimen>
+
+    <!-- height -->
+    <dimen name="height_button">48dp</dimen>
+    <dimen name="height_divider">1dp</dimen>
+
+    <!-- thumbnail -->
+    <dimen name="thumbnail_size_36dp">36dp</dimen>
+    <dimen name="thumbnail_size_64dp">64dp</dimen>
+
+    <!-- sitter card -->
+    <dimen name="margin_left_of_sitter_card">60dp</dimen>
+    <dimen name="margin_card_vertical_height">8dp</dimen>
+
+    <!-- sitter detail -->
+    <dimen name="width_house_about_type">120dp</dimen>
+    <dimen name="size_interior_image">96dp</dimen>
+    <dimen name="margin_sitter_interior_image_width">8dp</dimen>
+
+    <!-- message -->
+
+</resources>

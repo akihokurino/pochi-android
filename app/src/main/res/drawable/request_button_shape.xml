@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+    android:insetBottom="@dimen/space_4dp"
+    android:insetLeft="@dimen/space_4dp"
+    android:insetRight="@dimen/space_4dp"
+    android:insetTop="@dimen/space_4dp">
+    <shape xmlns:android="http://schemas.android.com/apk/res/android"
+        android:shape="rectangle">
+        <corners android:radius="4dp" />
+        <solid android:color="?attr/colorPrimary" />
+        <padding
+            android:bottom="@dimen/space_4dp"
+            android:left="@dimen/space_4dp"
+            android:right="@dimen/space_4dp"
+            android:top="@dimen/space_4dp" />
+    </shape>
+</inset>

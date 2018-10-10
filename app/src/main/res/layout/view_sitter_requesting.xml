@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/space_8dp"
+    android:paddingLeft="@dimen/space_16dp"
+    android:paddingRight="@dimen/space_16dp"
+    android:paddingTop="@dimen/space_8dp">
+
+    <include layout="@layout/view_sitter_request_content" />
+
+    <Button
+        android:id="@+id/accept"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_16dp"
+        android:background="@drawable/request_button_background"
+        android:text="@string/accept_request"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_16sp" />
+
+</LinearLayout>

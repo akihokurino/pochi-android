@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:elevation="@dimen/elevation_card"
+    android:foreground="?attr/selectableItemBackground">
+
+    <com.wanpaku.pochi.infra.ui.widget.AspectRatioImageView
+        android:id="@+id/main_thumbnail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:heightRatio="9"
+        app:widthRatio="16"
+        tools:src="@drawable/ic_others" />
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_thumbnail"
+        android:layout_marginLeft="@dimen/space_16dp"
+        android:layout_marginRight="@dimen/space_16dp"
+        android:layout_marginTop="@dimen/space_16dp">
+
+        <ImageView
+            android:id="@+id/user_thumbnail"
+            android:layout_width="@dimen/thumbnail_size_36dp"
+            android:layout_height="@dimen/thumbnail_size_36dp"
+            tools:src="@drawable/ic_others" />
+
+        <TextView
+            android:id="@+id/nickname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/space_8dp"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            tools:text="たかしさんのお家" />
+
+        <RatingBar
+            android:id="@+id/rating_bar"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/space_8dp"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:rating="3.5"
+            android:stepSize="1.0" />
+
+        <TextView
+            android:id="@+id/rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/space_8dp"
+            tools:text="3.5" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/introduction_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:layout_marginLeft="@dimen/margin_left_of_sitter_card"
+        android:layout_marginRight="@dimen/space_16dp"
+        android:layout_marginTop="@dimen/space_16dp"
+        tools:text="僕のページをみてくれてありがとう！いまは、一軒家に自分の犬と一緒に暮らしています。\n犬を飼い始めてからはもう3年経ちます。いろいろ…" />
+
+    <TextView
+        android:id="@+id/acceptable_dog_size_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/introduction_message"
+        android:layout_marginLeft="@dimen/margin_left_of_sitter_card"
+        android:layout_marginRight="@dimen/space_16dp"
+        android:layout_marginTop="@dimen/space_16dp"
+        android:text="@string/acceptable_dog_size_label"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/acceptable_dog_size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/acceptable_dog_size_label"
+        android:layout_marginBottom="@dimen/space_16dp"
+        android:layout_marginLeft="@dimen/margin_left_of_sitter_card"
+        android:layout_marginRight="@dimen/space_16dp"
+        android:layout_marginTop="@dimen/space_4dp"
+        tools:text="小型犬: OK / 中型犬: OK/ 大型犬: OK" />
+
+
+</RelativeLayout>

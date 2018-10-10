@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_search"
+        android:title="@string/search" />
+
+    <item
+        android:id="@+id/action_user_booking"
+        android:icon="@drawable/ic_leave_booking"
+        android:title="@string/user_booking" />
+
+    <item
+        android:id="@+id/action_sitter_booking"
+        android:icon="@drawable/ic_keep_booking"
+        android:title="@string/sitter_booking" />
+
+    <item
+        android:id="@+id/action_task"
+        android:icon="@drawable/ic_task"
+        android:title="@string/task" />
+
+    <item
+        android:id="@+id/action_others"
+        android:icon="@drawable/ic_others"
+        android:title="@string/others" />
+
+</menu>

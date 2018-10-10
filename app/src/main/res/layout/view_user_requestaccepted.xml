@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/space_8dp"
+    android:paddingLeft="@dimen/space_16dp"
+    android:paddingRight="@dimen/space_16dp"
+    android:paddingTop="@dimen/space_8dp">
+
+    <include layout="@layout/view_request_content" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_16dp"
+        android:text="@string/address"
+        android:textColor="?android:attr/textColorSecondary"
+        android:textSize="@dimen/text_12sp" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="?android:attr/textColorSecondary"
+        android:textSize="@dimen/text_16sp"
+        tools:text="東京都渋谷区上原2-8-1" />
+
+    <TextView
+        android:id="@+id/sitter_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/space_16dp"
+        android:background="?attr/selectableItemBackground"
+        android:gravity="center_horizontal"
+        android:text="@string/look_sitter_profile"
+        android:textColor="?attr/colorAccent"
+        android:textSize="@dimen/text_16sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/space_8dp"
+        android:layout_marginTop="@dimen/space_16dp"
+        android:gravity="center_horizontal"
+        android:text="@string/how_to_cancel"
+        android:textColor="?android:attr/textColorSecondary"
+        android:textSize="@dimen/text_12sp" />
+
+</LinearLayout>

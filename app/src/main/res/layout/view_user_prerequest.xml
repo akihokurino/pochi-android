@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/space_8dp"
+    android:paddingLeft="@dimen/space_16dp"
+    android:paddingRight="@dimen/space_16dp"
+    android:paddingTop="@dimen/space_8dp">
+
+    <include layout="@layout/view_request_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_16dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/dog_count"
+            style="@style/RequestButtonWithFrame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/space_8dp"
+            android:text="犬の数" />
+
+        <Button
+            android:id="@+id/start_date"
+            style="@style/RequestButtonWithFrame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/space_8dp"
+            android:text="開始日" />
+
+        <Button
+            android:id="@+id/end_date"
+            style="@style/RequestButtonWithFrame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/space_8dp"
+            android:text="終了日" />
+
+        <com.wanpaku.pochi.infra.ui.widget.TwoStateButton
+            android:id="@+id/request"
+            style="@style/RequestButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="リクエスト" />
+
+    </LinearLayout>
+
+</LinearLayout>

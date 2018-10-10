@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="TwoStateButton">
+        <attr name="activeBackground" format="integer" />
+        <attr name="inactiveBackground" format="integer" />
+        <attr name="isActive" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="AspectRatioImageView">
+        <attr name="widthRatio" format="integer" />
+        <attr name="heightRatio" format="integer" />
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="activity_change_zip_code" type="layout">@layout/activity_standard</item>
+    <item name="activity_message" type="layout">@layout/activity_standard</item>
+    <item name="fragment_search" type="layout">@layout/fragment_list</item>
+    <item name="fragment_search_result" type="layout">@layout/fragment_list</item>
+    <item name="fragment_booking_list" type="layout">@layout/fragment_list</item>
+    <item name="view_sitter_interior_image_swipe" type="layout">@layout/view_recyclerview_with_title</item>
+    <item name="view_sitter_house_about" type="layout">@layout/view_recyclerview_with_title</item>
+</resources>

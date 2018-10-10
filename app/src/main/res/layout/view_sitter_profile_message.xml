@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/space_16dp"
+        android:text="@string/sitter_profile_and_message"
+        android:textColor="?android:attr/textColorSecondary"
+        android:textSize="@dimen/text_16sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:padding="@dimen/space_16dp"
+        android:background="@drawable/with_frame_background">
+
+        <ImageView
+            android:id="@+id/thumbnail"
+            android:layout_width="@dimen/thumbnail_size_64dp"
+            android:layout_height="@dimen/thumbnail_size_64dp"
+            tools:src="@drawable/ic_task" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/thumbnail"
+            android:layout_alignTop="@+id/thumbnail"
+            android:layout_marginLeft="@dimen/space_16dp"
+            android:layout_toRightOf="@+id/thumbnail"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/full_name"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:paddingBottom="@dimen/space_4dp"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textSize="@dimen/text_16sp"
+                android:textStyle="bold"
+                tools:text="Nakagawa Takashi" />
+
+            <TextView
+                android:id="@+id/nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="top"
+                android:paddingTop="@dimen/space_4dp"
+                android:textColor="?android:attr/textColorSecondary"
+                android:textSize="@dimen/text_14sp"
+                tools:text="たかし" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/introduction_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/thumbnail"
+            android:layout_marginTop="@dimen/space_16dp"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textSize="@dimen/text_14sp"
+            tools:text="僕のページをみてくれてありがとう！いまは、一軒家に自
+分の犬と一緒に暮らしています。
+犬を飼い始めてからはもう3年経ちます。いろいろなワンち
+ゃんを預かってきました。安心してください♪
+なにか気になる点などあれば、いつでもメッセージくださ
+い。受け入れの時間などもできる限り調整します！" />
+
+        <include
+            android:id="@+id/divider_01"
+            layout="@layout/view_divider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_divider"
+            android:layout_below="@+id/introduction_message"
+            android:layout_marginTop="@dimen/space_16dp" />
+
+        <TextView
+            android:id="@+id/pet_dog_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/divider_01"
+            android:layout_marginTop="@dimen/space_16dp"
+            android:textColor="?android:attr/textColorSecondary"
+            android:textSize="@dimen/text_14sp"
+            tools:text="たかしさんの愛犬" />
+
+        <TextView
+            android:id="@+id/pet_dogs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/divider_01"
+            android:layout_marginTop="@dimen/space_16dp"
+            android:gravity="right"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textSize="@dimen/text_14sp"
+            tools:text="ゴールデンレトリバー\nトイプードル" />
+
+        <include
+            android:id="@+id/divider_02"
+            layout="@layout/view_divider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_divider"
+            android:layout_below="@+id/pet_dogs"
+            android:layout_marginTop="@dimen/space_16dp" />
+
+        <TextView
+            android:id="@+id/about_pet_dog_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/divider_02"
+            android:layout_marginTop="@dimen/space_16dp"
+            android:text="@string/about_pet_dog"
+            android:textColor="?android:attr/textColorSecondary"
+            android:textSize="@dimen/text_14sp" />
+
+        <TextView
+            android:id="@+id/about_pet_dog_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/about_pet_dog_label"
+            android:layout_marginTop="@dimen/space_16dp"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textSize="@dimen/text_14sp"
+            tools:text="2匹とも大人しくて、行儀がいい子です！ぜひなかよくし
+てください♪" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

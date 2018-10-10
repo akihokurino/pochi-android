@@ -1,0 +1,154 @@
+buildscript {
+    repositories {
+        jcenter()
+        mavenCentral()
+        maven { url 'https://maven.fabric.io/public' }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.3.2'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:${versions.kotlin}"
+        classpath "org.jetbrains.kotlin:kotlin-android-extensions:${versions.kotlin}"
+        classpath "com.jakewharton:butterknife-gradle-plugin:${versions.butterknife}"
+        classpath "com.google.gms:google-services:${versions.google_services}"
+        classpath "io.fabric.tools:gradle:1.+"
+    }
+}
+
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'com.jakewharton.butterknife'
+apply plugin: 'io.fabric'
+
+repositories {
+    jcenter()
+    mavenCentral()
+    maven { url 'https://maven.fabric.io/public' }
+    maven { url 'https://maven.google.com' }
+}
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.1"
+    defaultConfig {
+        applicationId "com.wanpaku.pochi"
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        buildConfigField("String", "OMISE_PUBLIC_KEY", "\"pkey_test_59f7nfpjzyb65xigde9\"")
+    }
+    buildTypes {
+        debug {
+            minifyEnabled false
+            multiDexEnabled true
+        }
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro', 'annotations.pro'
+        }
+    }
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+        androidTest.java.srcDirs += "src/androidTest/kotlin"
+        debug.java.srcDirs += 'src/debug/kotlin'
+    }
+    packagingOptions {
+        exclude 'META-INF/rxjava.properties'
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+    testCompile 'junit:junit:4.12'
+
+    compile "com.android.support:appcompat-v7:${versions.android_support_library}"
+    compile "com.android.support:recyclerview-v7:${versions.android_support_library}"
+    compile "com.android.support:cardview-v7:${versions.android_support_library}"
+    compile "com.android.support:design:${versions.android_support_library}"
+    compile "com.android.support:percent:${versions.android_support_library}"
+    compile "com.android.support:customtabs:${versions.android_support_library}"
+    compile ('com.google.android:flexbox:0.3.0') {
+        exclude group: "com.android.support"
+    }
+    compile 'com.google.android.gms:play-services-maps:11.0.4'
+
+    compile 'com.android.support:multidex:1.0.1'
+
+    compile "com.infstory:proguard-annotations:1.0.2"
+
+    compile "org.jetbrains.kotlin:kotlin-stdlib:${versions.kotlin}"
+
+    compile "io.reactivex.rxjava2:rxjava:${versions.rxjava}"
+    compile "io.reactivex.rxjava2:rxandroid:${versions.rxandroid}"
+    compile ("com.jakewharton.rxbinding2:rxbinding:${versions.rxbinding}") {
+        exclude group: 'com.android.support'
+    }
+    compile ("com.jakewharton.rxbinding2:rxbinding-appcompat-v7:${versions.rxbinding}") {
+        exclude group: 'com.android.support'
+    }
+    compile ("com.jakewharton.rxbinding2:rxbinding-design:${versions.rxbinding}") {
+        exclude group: 'com.android.support'
+    }
+    compile ("com.jakewharton.rxbinding2:rxbinding-recyclerview-v7:${versions.rxbinding}") {
+        exclude group: 'com.android.support'
+    }
+
+    compile 'com.google.firebase:firebase-auth:11.0.4'
+    compile ('com.facebook.android:facebook-android-sdk:4.+') {
+        exclude group: 'com.android.support'
+    }
+
+    compile "com.squareup.okhttp3:okhttp:${versions.okhttp}"
+    compile "com.squareup.okhttp3:logging-interceptor:${versions.okhttp}"
+    compile "com.squareup.retrofit2:retrofit:${versions.retrofit}"
+    compile "com.squareup.retrofit2:adapter-rxjava2:${versions.retrofit}"
+    compile "com.squareup.retrofit2:converter-gson:${versions.retrofit}"
+
+    compile "com.google.dagger:dagger:${versions.dagger}"
+    kapt "com.google.dagger:dagger-compiler:${versions.dagger}"
+    provided 'javax.annotation:jsr250-api:1.0'
+
+    compile ("com.jakewharton:butterknife:${versions.butterknife}") {
+        exclude group: 'com.android.support'
+    }
+    kapt "com.jakewharton:butterknife-compiler:${versions.butterknife}"
+    annotationProcessor "com.jakewharton:butterknife-compiler:${versions.butterknife}"
+
+    compile 'com.jakewharton.timber:timber:4.5.1'
+
+    compile 'com.scottyab:secure-preferences-lib:0.1.4'
+    compile('com.crashlytics.sdk.android:crashlytics:2.6.8@aar') {
+        transitive = true;
+    }
+
+    compile 'nz.bradcampbell:paperparcel:2.0.4'
+    compile 'nz.bradcampbell:paperparcel-kotlin:2.0.4'
+    kapt 'nz.bradcampbell:paperparcel-compiler:2.0.4'
+
+    compile 'com.google.code.gson:gson:2.8.1'
+
+    compile 'com.github.bumptech.glide:glide:4.0.0'
+    kapt 'com.github.bumptech.glide:compiler:4.0.0'
+
+    compile 'net.danlew:android.joda:2.9.9'
+
+    compile 'com.github.stfalcon:chatkit:0.2.2'
+
+    compile ('co.omise:omise-android:2.3.+') {
+        exclude group: 'joda-time', module: 'joda-time'
+    }
+}
+
+apply plugin: 'com.google.gms.google-services'
